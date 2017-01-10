@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-	<addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" version="1.0.10" provider-name="marcelveldt">
+	<addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" version="1.0.10.001" provider-name="marcelveldt">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0"/>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -8,13 +8,16 @@
 	<extension library="service.py" point="xbmc.service" start="login" />
 
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Helper service for Kodi skins</summary>
-        <description>Helper service for Kodi skins</description>
+		<summary lang="en_GB">Helper service for Kodi skins (Backup)</summary>
+        <summary lang="ru_RU">Сервис помощник для KODI обложек (Резерное копирование)</summary>
+        <description lang="en_GB">Helper service for Kodi skins (Backup)</description>
+        <description lang="ru_RU">Сервис помощник для KODI обложек (Резерное копирование)</description>
 		<language></language>
 		<platform>all</platform>
 		<license>GPL v2.0</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
 		<website></website>
-		<source>https://github.com/marcelveldt/script.skin.helper.skinbackup</source>
+        <email>nkvoronov@gmail.com</email>
+		<source>https://github.com/nkvoronov/script.skin.helper.skinbackup.git</source>
 	</extension>
 </addon>
