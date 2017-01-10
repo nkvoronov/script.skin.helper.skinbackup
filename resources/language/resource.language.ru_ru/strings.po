@@ -22,7 +22,7 @@ msgstr "Общие"
 
 msgctxt "#32001"
 msgid "Default backup path"
-msgstr "Путь для резервного копирования по умолчанию"
+msgstr "Путь для резервного копирования"
 
 msgctxt "#32002"
 msgid "Select location to store skin backups"
