@@ -65,8 +65,8 @@ msgid "Are you sure you want to reset the skin to default settings ?"
 msgstr "Вы уверены, что хотите сбросить настройки обложки до значений по умолчанию ?"
 
 msgctxt "#32012"
-msgid "Open settings"
-msgstr "Открыть настройки"
+msgid "Settings"
+msgstr "Настройки"
 
 msgctxt "#32013"
 msgid "Create new backup"
