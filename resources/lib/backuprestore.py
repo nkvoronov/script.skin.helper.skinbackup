@@ -286,6 +286,8 @@ class BackupRestore:
     def create_temp():
         '''create temp folder for skin backup/restore'''
         temp_path = u'%stemp/' % ADDON_DATA
+        # workaround weird slashes behaviour on some platforms.
+        temp_path = temp_path.replace("//","/").replace("special:/","special://")
         if xbmcvfs.exists(temp_path):
             recursive_delete_dir(temp_path)
             xbmc.sleep(2000)
@@ -295,8 +297,9 @@ class BackupRestore:
 
     def get_restorefilename(self):
         '''browse for backup file'''
-        return xbmcgui.Dialog().browse(1, self.addon.getLocalizedString(32008),
+        filename = xbmcgui.Dialog().browse(1, self.addon.getLocalizedString(32008),
                                        'files').decode("utf-8")
+        filename = filename.replace("//", "") # possible fix for strange path issue on atv/ftv ?
 
     @staticmethod
     def get_skinsettings(filters=None):
