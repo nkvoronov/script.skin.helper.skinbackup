@@ -7,6 +7,7 @@
 '''
 
 import sys
+import xbmcvfs
 from resources.lib.backuprestore import BackupRestore
 from resources.lib.colorthemes import ColorThemes
 from resources.lib.utils import log_exception, log_msg
@@ -55,7 +56,7 @@ class Main():
     def restore(self):
         '''restore skin settings from file'''
         backuprestore = BackupRestore()
-        silent = self.params.get("SILENT", "")
+        silent = self.params.get("silent", "")
         if silent and not xbmcvfs.exists(silent):
             log_msg(
                 "ERROR while restoring backup ! --> Filename invalid."
