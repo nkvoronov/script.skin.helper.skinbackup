@@ -1,7 +1,7 @@
 # Kodi language file
 # Addon Name: Skin Helper Skinbackup
 # Addon id: script.skin.helper.skinbackup
-# Addon Provider: marcelveldt
+# Addon Provider: marcelveldt, YLLOW_DRAGON
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC-Addons\n"
@@ -10,7 +10,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE\n"
-"Language: ru\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -126,7 +126,7 @@ msgstr "Цветовая тема создана успешно"
 
 msgctxt "#32027"
 msgid "Your color theme is now available in the list of available themes"
-msgstr "Ваш цветовая тема теперь доступна в списке доступных тем"
+msgstr "Ваша цветовая тема теперь доступна в списке доступных тем"
 
 msgctxt "#32028"
 msgid "Enter a name for the theme"
@@ -166,9 +166,9 @@ msgstr "Создать новую пользоательскую цветову�
 
 msgctxt "#32037"
 msgid "Import Color Theme"
-msgstr "Импорт цветовую тему"
+msgstr "Импорт цветной темы"
 
 msgctxt "#32038"
 msgid "Import a color theme from file."
-msgstr "Импорт цветовую тему из файла."
+msgstr "Импорт цветной темы из файла."
 

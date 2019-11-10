@@ -1,0 +1,174 @@
+# Kodi language file
+# Addon Name: Skin Helper Skinbackup
+# Addon id: script.skin.helper.skinbackup
+# Addon Provider: marcelveldt, YLLOW_DRAGON
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2014-10-26 17:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "#32000"
+msgid "General"
+msgstr "Загальні"
+
+msgctxt "#32001"
+msgid "Default backup path"
+msgstr "Шлях для резервного копіювання"
+
+msgctxt "#32002"
+msgid "Select location to store skin backups"
+msgstr "Виберіть папку для зберігання резервних копій обкладинки"
+
+msgctxt "#32003"
+msgid "Please enter a name for the backup"
+msgstr "Будь ласка, введіть ім'я для резервної копії"
+
+msgctxt "#32004"
+msgid "Backup the skin settings"
+msgstr "Резервне копіювання налаштувань обкладинки"
+
+msgctxt "#32005"
+msgid "Backupfile was succesfully created!"
+msgstr "Резервна копія була успішно створена!"
+
+msgctxt "#32006"
+msgid "Restore the skin settings"
+msgstr "Відновлення налаштувань обкладинки"
+
+msgctxt "#32007"
+msgid "Restoring..."
+msgstr "Відновлення..."
+
+msgctxt "#32008"
+msgid "Select skin backup file"
+msgstr "Вибрати файл резервної копії"
+
+msgctxt "#32009"
+msgid "Your backup is succesfully restored!"
+msgstr "Ваша резервна копія успішно відновлена!"
+
+msgctxt "#32010"
+msgid "Reset the skin to default settings"
+msgstr "Скидання налаштувань обкладинки"
+
+msgctxt "#32011"
+msgid "Are you sure you want to reset the skin to default settings ?"
+msgstr "Ви впевнені, що хочете скинути налаштування обкладинки до значень за замовчуванням?"
+
+msgctxt "#32012"
+msgid "Settings"
+msgstr "Налаштування"
+
+msgctxt "#32013"
+msgid "Create new backup"
+msgstr "Створити нову резервну копію"
+
+msgctxt "#32014"
+msgid "Select backup from file"
+msgstr "Вибрати резервну копію з файлу"
+
+msgctxt "#32015"
+msgid "Restore"
+msgstr "Відновлення"
+
+msgctxt "#32016"
+msgid "Manage skin backups"
+msgstr "Управління резервними копіями обкладинки"
+
+msgctxt "#32017"
+msgid "Please enter the time that this theme should be activated (hh:mm in 24-hours format)"
+msgstr "Будь ласка, введіть час, коли ця тема буде активована (чч:мм в 24-годинному форматі)"
+
+msgctxt "#32018"
+msgid "Did you enter the time in the correct format ?"
+msgstr "Ви ввели час в потрібному форматі?"
+
+msgctxt "#32019"
+msgid "Activates every day at "
+msgstr "Активувати кожен день в"
+
+msgctxt "#32020"
+msgid "Manage Color themes"
+msgstr "Управління кольором теми"
+
+msgctxt "#32021"
+msgid "Apply this Color Theme"
+msgstr "Застосувати цю кольорову тему"
+
+msgctxt "#32022"
+msgid "Export this theme to file"
+msgstr "Експортувати цю тему в файл"
+
+msgctxt "#32023"
+msgid "Enter a name for your color theme"
+msgstr "Введіть ім'я для вашої кольорової теми"
+
+msgctxt "#32024"
+msgid "Screenshot of color theme (optional)"
+msgstr "Знімок екрану кольорової теми (необов'язково)"
+
+msgctxt "#32025"
+msgid "User defined color theme"
+msgstr "Визначити кольорову тему користувача"
+
+msgctxt "#32026"
+msgid "Color theme created succesfully"
+msgstr "Кольорова тема успішно створена"
+
+msgctxt "#32027"
+msgid "Your color theme is now available in the list of available themes"
+msgstr "Ваша кольорова тема тепер доступна в списку доступних тем"
+
+msgctxt "#32028"
+msgid "Enter a name for the theme"
+msgstr "Введіть ім'я для теми"
+
+msgctxt "#32029"
+msgid "Select location to store export"
+msgstr "Виберіть розташування для збереження експорту"
+
+msgctxt "#32030"
+msgid "Select skin theme backup file"
+msgstr "Вибрати резервну копію кольорової теми"
+
+msgctxt "#32031"
+msgid "Select Color theme"
+msgstr "Вибрати кольорову тему"
+
+msgctxt "#32032"
+msgid "Enable automatic daily backups"
+msgstr "Увімкнути автоматичне щоденне резервне копіювання"
+
+msgctxt "#32033"
+msgid "Restoring..."
+msgstr "Відновлення..."
+
+msgctxt "#32034"
+msgid "Maximum number of historic backups to keep"
+msgstr "Максимальна кількість резервних копій для збереження"
+
+msgctxt "#32035"
+msgid "Create Color Theme"
+msgstr "Створити кольорову тему"
+
+msgctxt "#32036"
+msgid "Create new custom color theme based on your current skin color settings."
+msgstr "Створити нову кольорову тему користовича на основі поточних налаштувань кольору обкладинки."
+
+msgctxt "#32037"
+msgid "Import Color Theme"
+msgstr "Імпорт кольорової теми"
+
+msgctxt "#32038"
+msgid "Import a color theme from file."
+msgstr "Імпорт кольорової теми з файлу."
+
