@@ -34,7 +34,7 @@ class Main():
         except Exception as exc:
             log_exception(__name__, exc)
         finally:
-            xbmc.executebuiltin("dialog.Close(busydialog)")
+            xbmc.executebuiltin("Dialog.Close(busydialognocancel)")
 
     def backup(self):
         '''backup skin settings to file'''

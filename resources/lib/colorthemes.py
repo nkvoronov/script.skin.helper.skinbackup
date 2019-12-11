@@ -142,7 +142,7 @@ class ColorThemes():
         import zipfile
         backup_path = xbmcgui.Dialog().browse(3, self.addon.getLocalizedString(32029), "files").decode("utf-8")
         if backup_path:
-            xbmc.executebuiltin("ActivateWindow(busydialog)")
+            xbmc.executebuiltin("ActivateWindow(busydialognocancel)")
             backup_name = u"%s ColorTheme - %s" % (get_skin_name().capitalize(), themename)
             backupfile = os.path.join(backup_path, backup_name + u".zip")
             zip_temp = u'special://temp/%s.zip' % backup_name
@@ -161,7 +161,7 @@ class ColorThemes():
                     zip_file.write(absname, arcname)
             zip_file.close()
             xbmcvfs.copy(zip_temp, backupfile)
-            xbmc.executebuiltin("Dialog.Close(busydialog)")
+            xbmc.executebuiltin("Dialog.Close(busydialognocancel)")
 
     @staticmethod
     def remove_theme(filename):
@@ -234,7 +234,7 @@ class ColorThemes():
     @staticmethod
     def load_colortheme(filename):
         '''load colortheme from themefile'''
-        xbmc.executebuiltin("ActivateWindow(busydialog)")
+        xbmc.executebuiltin("ActivateWindow(busydialognocancel)")
         xbmcfile = xbmcvfs.File(filename)
         data = xbmcfile.read()
         xbmcfile.close()
@@ -294,7 +294,7 @@ class ColorThemes():
         if skinfont and current_skinfont != skinfont and current_skinfont.lower() != "arial":
             kodi_json("Settings.SetSettingValue", {"setting": "lookandfeel.font", "value": skinfont})
 
-        xbmc.executebuiltin("Dialog.Close(busydialog)")
+        xbmc.executebuiltin("Dialog.Close(busydialognocancel)")
 
     def restore_colortheme(self):
         '''restore zipbackup of colortheme to colorthemes folder'''
@@ -339,7 +339,7 @@ class ColorThemes():
             if not themename:
                 return
 
-            xbmc.executebuiltin("ActivateWindow(busydialog)")
+            xbmc.executebuiltin("ActivateWindow(busydialognocancel)")
             xbmc.executebuiltin("Skin.SetString(SkinHelper.LastColorTheme,%s)" % themename.encode("utf-8"))
 
             # add screenshot
@@ -385,10 +385,10 @@ class ColorThemes():
                 text_file = xbmcvfs.File(text_file_path, "w")
                 text_file.write(repr(newlist))
                 text_file.close()
-                xbmc.executebuiltin("Dialog.Close(busydialog)")
+                xbmc.executebuiltin("Dialog.Close(busydialognocancel)")
                 xbmcgui.Dialog().ok(self.addon.getLocalizedString(32026), self.addon.getLocalizedString(32027))
         except Exception as exc:
-            xbmc.executebuiltin("Dialog.Close(busydialog)")
+            xbmc.executebuiltin("Dialog.Close(busydialognocancel)")
             log_exception(__name__, exc)
             xbmcgui.Dialog().ok(self.addon.getLocalizedString(32028), self.addon.getLocalizedString(32030), str(exc))
 
