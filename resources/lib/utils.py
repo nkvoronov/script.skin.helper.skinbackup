@@ -49,7 +49,7 @@ def kodi_json(jsonmethod, params=None):
     if 'result' in json_object:
         # look for correct returntype
         if isinstance(json_object['result'], dict):
-            for key, value in json_object['result'].iteritems():
+            for key, value in json_object['result'].items():
                 if not key == "limits":
                     result = value
                     break
