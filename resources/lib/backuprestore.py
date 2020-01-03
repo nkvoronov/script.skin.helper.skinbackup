@@ -14,7 +14,7 @@ import xbmcaddon
 from resources.lib.utils import log_msg, ADDON_ID, get_skin_name, ADDON_DATA, copy_file, delete_file
 from resources.lib.utils import recursive_delete_dir, get_clean_image, normalize_string
 from resources.lib.utils import zip_tofile, unzip_fromfile
-from dialogselect import DialogSelect
+from resources.lib.dialogselect import DialogSelect
 from xml.dom.minidom import parse
 from datetime import datetime
 
