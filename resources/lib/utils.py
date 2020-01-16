@@ -7,7 +7,7 @@ import os, sys
 import xbmc
 import xbmcvfs
 import xbmcgui
-import urllib.parse as urllib
+import urllib.parse
 from traceback import format_exc
 import unicodedata
 
@@ -100,7 +100,7 @@ def get_clean_image(image):
     '''helper to strip all kodi tags/formatting of an image path/url'''
     if image and "image://" in image:
         image = image.replace("image://", "")
-        image = urllib.unquote(image)
+        image = urllib.parse.unquote(image)
         if image.endswith("/"):
             image = image[:-1]
     if "music@" in image:

@@ -229,8 +229,8 @@ class BackupRestore:
                                 copy_file(thumb, newthumb)
                                 shortcut.getElementsByTagName('thumb')[0].firstChild.data = newthumb_vfs
         # write changes to skinshortcuts file
-        shortcuts_file = xbmcvfs.File(shortcutfile, "w")
-        shortcuts_file.write(doc.toxml(encoding='utf-8'))
+        shortcuts_file = xbmcvfs.File(shortcutfile, 'w')
+        shortcuts_file.write(bytearray(doc.toxml(encoding="utf-8")))
         shortcuts_file.close()
 
     @staticmethod
@@ -256,7 +256,7 @@ class BackupRestore:
                         copy_file(background, newthumb)
                         allprops[count] = [prop[0], prop[1], prop[2], newthumb_vfs]
         # write updated properties file
-        propfile = xbmcvfs.File(propertiesfile, "w")
+        propfile = xbmcvfs.File(propertiesfile, 'w')
         propfile.write(repr(allprops))
         propfile.close()
 
