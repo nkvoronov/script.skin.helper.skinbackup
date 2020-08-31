@@ -147,12 +147,12 @@ class BackupRestore:
                 # show settings
                 xbmc.executebuiltin("Addon.OpenSettings(%s)" % ADDON_ID)
             else:
-                if result.getfilename() == "backup":
+                if result.getPath() == "backup":
                     # create new backup
                     self.backup(backup_file=self.get_backupfilename())
                 else:
                     # restore backup
-                    self.restore(result.getfilename())
+                    self.restore(result.getPath())
                 # always open the dialog again
                 self.backuprestore()
 

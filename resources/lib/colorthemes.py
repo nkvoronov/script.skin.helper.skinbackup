@@ -59,7 +59,7 @@ class ColorThemes():
         result = dialog.result
         del dialog
         if result:
-            themefile = result.getfilename()
+            themefile = result.getPath()
             themename = result.getLabel()
             has_icon = xbmcvfs.exists(themefile.replace(".theme", ".jpg"))
             if themefile == "add":
@@ -112,7 +112,7 @@ class ColorThemes():
         result = dialog.result
         del dialog
         if result:
-            themefile = result.getfilename()
+            themefile = result.getPath()
             themename = result.getLabel()
             self.set_day_night_theme(dayornight, themename, themefile)
 
