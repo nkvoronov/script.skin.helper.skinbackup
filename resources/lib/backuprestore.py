@@ -380,7 +380,7 @@ class BackupRestore:
         log_msg("filters: %s" % filters)
         if silent or (not silent and
                       xbmcgui.Dialog().yesno(heading=self.addon.getLocalizedString(32010),
-                                             line1=self.addon.getLocalizedString(32011))):
+                                             message=self.addon.getLocalizedString(32011))):
             if filters:
                 # only restore specific settings
                 skinsettings = self.get_skinsettings(filters)
