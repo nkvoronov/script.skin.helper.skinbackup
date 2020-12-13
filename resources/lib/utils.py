@@ -133,7 +133,7 @@ def add_tozip(src, zip_file, abs_src):
     dirs, files = xbmcvfs.listdir(src)
     for filename in files:
         log_msg("zipping %s" % filename)
-        filepath = xbmc.translatePath(os.path.join(src, filename))
+        filepath = xbmcvfs.translatePath(os.path.join(src, filename))
         absname = os.path.abspath(filepath)
         arcname = absname[len(abs_src) + 1:]
         try:
@@ -151,7 +151,7 @@ def zip_tofile(src, dst):
     '''method to create a zip file from all files/dirs in a path'''
     import zipfile
     zip_file = zipfile.ZipFile(dst, "w", zipfile.ZIP_DEFLATED)
-    abs_src = os.path.abspath(xbmc.translatePath(src))
+    abs_src = os.path.abspath(xbmcvfs.translatePath(src))
     zip_file = add_tozip(src, zip_file, abs_src)
     zip_file.close()
 
@@ -160,8 +160,8 @@ def unzip_fromfile(zip_path, dest_path):
     '''method to unzip a zipfile to a destination path'''
     import shutil
     import zipfile
-    zip_path = xbmc.translatePath(zip_path)
-    dest_path = xbmc.translatePath(dest_path)
+    zip_path = xbmcvfs.translatePath(zip_path)
+    dest_path = xbmcvfs.translatePath(dest_path)
     log_msg("START UNZIP of file %s  to path %s " % (zip_path, dest_path))
     zip_file = zipfile.ZipFile(zip_path, 'r')
     for fileinfo in zip_file.infolist():

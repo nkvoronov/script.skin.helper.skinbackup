@@ -148,13 +148,13 @@ class ColorThemes():
             zip_temp = 'special://temp/%s.zip' % backup_name
             xbmcvfs.delete(zip_temp)
             xbmcvfs.delete(backupfile)
-            zip_temp = xbmc.translatePath(zip_temp)
+            zip_temp = xbmcvfs.translatePath(zip_temp)
             zip_file = zipfile.ZipFile(zip_temp, "w", zipfile.ZIP_DEFLATED)
-            abs_src = os.path.abspath(xbmc.translatePath(self.userthemes_path))
+            abs_src = os.path.abspath(xbmcvfs.translatePath(self.userthemes_path))
             for filename in xbmcvfs.listdir(self.userthemes_path)[1]:
                 if (filename.startswith("%s_" % themename) or
                         filename.replace(".theme", "").replace(".jpg", "") == themename):
-                    filepath = xbmc.translatePath(self.userthemes_path + filename)
+                    filepath = xbmcvfs.translatePath(self.userthemes_path + filename)
                     absname = os.path.abspath(filepath)
                     arcname = absname[len(abs_src) + 1:]
                     zip_file.write(absname, arcname)

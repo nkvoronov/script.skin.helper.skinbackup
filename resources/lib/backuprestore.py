@@ -54,7 +54,7 @@ class BackupRestore:
             self.backup_skinsettings(skinsettings_path, filters, temp_path)
 
         # zip the backup
-        zip_temp = xbmc.translatePath(zip_temp)
+        zip_temp = xbmcvfs.translatePath(zip_temp)
         zip_tofile(temp_path, zip_temp)
 
         # copy file to destination - wait untill it's really copied
@@ -202,7 +202,7 @@ class BackupRestore:
     @staticmethod
     def backup_skinshortcuts_images(shortcutfile, dest_path):
         '''parse skinshortcuts file and copy images to backup location'''
-        shortcutfile = xbmc.translatePath(shortcutfile)
+        shortcutfile = xbmcvfs.translatePath(shortcutfile)
         doc = parse(shortcutfile)
         listing = doc.documentElement.getElementsByTagName('shortcut')
         for shortcut in listing:
@@ -306,7 +306,7 @@ class BackupRestore:
         all_skinsettings = []
         guisettings_path = 'special://profile/addon_data/%s/settings.xml' % xbmc.getSkinDir()
         if xbmcvfs.exists(guisettings_path):
-            doc = parse(xbmc.translatePath(guisettings_path))
+            doc = parse(xbmcvfs.translatePath(guisettings_path))
             skinsettings = doc.documentElement.getElementsByTagName('setting')
             for skinsetting in skinsettings:
                 settingname = skinsetting.attributes['id'].nodeValue
