@@ -23,7 +23,7 @@ def log_msg(msg, loglevel=xbmc.LOGDEBUG):
 
 def log_exception(modulename, exceptiondetails):
     '''helper to properly log exception details'''
-    log_msg(format_exc(sys.exc_info()), xbmc.LOGNOTICE)
+    log_msg(format_exc(sys.exc_info()), xbmc.LOGINFO)
     log_msg("ERROR in %s ! --> %s" % (modulename, exceptiondetails), xbmc.LOGERROR)
     dialog = xbmcgui.Dialog()
     dialog.notification(
